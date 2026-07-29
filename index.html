@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary meta -->
+  <title>Shubhashis Saha, MD — Internal Medicine Resident &amp; Cardiovascular Researcher</title>
+  <meta name="title" content="Shubhashis Saha, MD — Internal Medicine Resident &amp; Cardiovascular Researcher" />
+  <meta name="description" content="Internal medicine resident at Cook County Health and MSc in Clinical Investigation candidate at Northwestern University, with a clinical and research focus in cardiovascular medicine — heart failure, structural and nuclear cardiology, and outcomes research." />
+  <meta name="author" content="Shubhashis Saha" />
+  <link rel="canonical" href="https://shubhashissaha.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shubhashissaha.com/" />
+  <meta property="og:title" content="Shubhashis Saha, MD — Cardiovascular Researcher" />
+  <meta property="og:description" content="Internal medicine resident and clinical researcher focused on cardiovascular medicine: heart failure, structural &amp; nuclear cardiology, and outcomes research." />
+  <meta property="og:image" content="https://shubhashissaha.com/assets/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://shubhashissaha.com/" />
+  <meta name="twitter:title" content="Shubhashis Saha, MD — Cardiovascular Researcher" />
+  <meta name="twitter:description" content="Internal medicine resident and clinical researcher focused on cardiovascular medicine." />
+  <meta name="twitter:image" content="https://shubhashissaha.com/assets/og-image.png" />
+
+  <!-- Inline SVG favicon (no external request) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b2a4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%23ffffff' text-anchor='middle'%3ESS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shubhashis Saha",
+    "honorificSuffix": "MD",
+    "jobTitle": "Internal Medicine Resident",
+    "worksFor": { "@type": "Organization", "name": "Cook County Health (John H. Stroger Jr. Hospital)" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Christian Medical College, Vellore" },
+      { "@type": "CollegeOrUniversity", "name": "Northwestern University" }
+    ],
+    "knowsAbout": ["Cardiology", "Heart Failure", "Nuclear Cardiology", "Structural Heart Disease", "Clinical Outcomes Research"],
+    "url": "https://shubhashissaha.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/shubhashissaha/",
+      "https://orcid.org/0000-0002-9655-3237",
+      "https://www.ncbi.nlm.nih.gov/myncbi/shubhashis.saha.1/bibliography/public/",
+      "https://www.researchgate.net/profile/Shubhashis-Saha/research"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0b2a4a;
+      --navy-2: #113a63;
+      --accent: #b3123c;      /* restrained cardiology crimson */
+      --accent-soft: #f6e5ea;
+      --ink: #1c2630;
+      --muted: #5b6b7a;
+      --line: #e4e9ee;
+      --bg: #ffffff;
+      --bg-alt: #f6f8fa;
+      --chip: #eef3f7;
+      --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    h1, h2, h3, h4 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); line-height: 1.2; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+    /* ---------- Nav ---------- */
+    header.nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: saturate(180%) blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .brand { font-family: Georgia, serif; font-weight: 700; color: var(--navy); font-size: 18px; letter-spacing: .2px; }
+    .brand span { color: var(--accent); }
+    nav.links { display: flex; gap: 20px; flex-wrap: wrap; }
+    nav.links a { color: var(--muted); font-size: 14px; font-weight: 500; }
+    nav.links a:hover { color: var(--navy); text-decoration: none; }
+    .nav-toggle { display: none; background: none; border: 0; font-size: 22px; color: var(--navy); cursor: pointer; }
+
+    /* ---------- Hero ---------- */
+    .hero { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; }
+    .hero .wrap { display: grid; grid-template-columns: 1fr auto; gap: 34px; align-items: center; padding: 54px 22px; }
+    .hero h1 { color: #fff; font-size: 42px; margin: 0 0 6px; }
+    .hero .role { color: #cfe0f0; font-size: 18px; font-weight: 600; margin-bottom: 14px; }
+    .hero p.lead { color: #e8eef5; font-size: 16.5px; max-width: 620px; margin: 0 0 22px; }
+    .avatar-wrap { width: 168px; height: 168px; }
+    .avatar-img, .avatar-fallback {
+      width: 168px; height: 168px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.85); object-fit: cover;
+    }
+    .avatar-fallback {
+      display: none; align-items: center; justify-content: center;
+      background: #143a61; color: #cfe0f0; font-family: Georgia, serif; font-size: 58px;
+    }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 18px; border-radius: 8px; font-size: 14.5px; font-weight: 600;
+      border: 1px solid transparent; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: #97102f; text-decoration: none; }
+    .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); text-decoration: none; }
+    .profiles { display: flex; gap: 16px; flex-wrap: wrap; }
+    .profiles a { color: #cfe0f0; font-size: 13.5px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+    .profiles a:hover { color: #fff; text-decoration: none; }
+    .profiles svg { width: 15px; height: 15px; fill: currentColor; }
+
+    /* ---------- Metrics ---------- */
+    .metrics { background: var(--accent-soft); border-bottom: 1px solid var(--line); }
+    .metrics .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 26px 22px; }
+    .metric { text-align: center; }
+    .metric .n { font-family: Georgia, serif; font-size: 30px; color: var(--accent); font-weight: 700; }
+    .metric .l { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+    /* ---------- Sections ---------- */
+    section.block { padding: 46px 0; border-bottom: 1px solid var(--line); }
+    section.block:nth-of-type(even) { background: var(--bg-alt); }
+    .block h2 { font-size: 26px; margin: 0 0 6px; position: relative; padding-bottom: 8px; }
+    .block h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 46px; height: 3px; background: var(--accent); border-radius: 2px; }
+    .block .sub { color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+    section.block:nth-of-type(even) .card { background: #fff; }
+    .entry-head { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; align-items: baseline; }
+    .entry-title { font-family: Georgia, serif; font-weight: 700; color: var(--navy); font-size: 17px; }
+    .entry-org { color: var(--ink); font-weight: 600; font-size: 14.5px; }
+    .entry-date { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    .entry-body { color: var(--ink); font-size: 14.5px; margin-top: 8px; }
+    .entry-body ul { margin: 8px 0 0; padding-left: 18px; }
+    .entry-body li { margin-bottom: 5px; }
+    .pi { color: var(--muted); font-size: 13px; margin-top: 6px; }
+    .pi b { color: var(--navy); }
+
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .chip { background: var(--chip); color: var(--navy); border-radius: 999px; padding: 4px 11px; font-size: 12.5px; font-weight: 500; }
+
+    /* Publications */
+    .pub { padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; }
+    .pub:last-child { border-bottom: 0; }
+    .pub .authors { color: var(--ink); }
+    .pub .title { font-weight: 600; color: var(--navy); }
+    .pub .venue { font-style: italic; color: var(--muted); }
+    .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .3px; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; margin-left: 4px; vertical-align: middle; }
+    .badge-first { background: var(--accent); color: #fff; }
+    .badge-star { background: #f4c542; color: #4a3800; }
+    .badge-pub { background: #e2efe4; color: #1f6b32; }
+    .badge-rev { background: #eae2f4; color: #533a86; }
+    .badge-acc { background: #dceaf7; color: #10456f; }
+    details.group { margin-bottom: 12px; }
+    details.group > summary {
+      cursor: pointer; font-family: Georgia, serif; font-weight: 700; color: var(--navy);
+      font-size: 16px; padding: 10px 0; list-style: none; display: flex; align-items: center; gap: 8px;
+    }
+    details.group > summary::-webkit-details-marker { display: none; }
+    details.group > summary::before { content: "▸"; color: var(--accent); font-size: 13px; }
+    details.group[open] > summary::before { content: "▾"; }
+    .count-tag { color: var(--muted); font-weight: 500; font-size: 13px; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .list-clean { list-style: none; padding: 0; margin: 0; }
+    .list-clean li { padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+    .list-clean li:last-child { border-bottom: 0; }
+    .list-clean .yr { color: var(--accent); font-weight: 700; font-size: 12.5px; margin-right: 8px; }
+
+    /* Footer */
+    footer.site { background: var(--navy); color: #cfe0f0; padding: 40px 0; }
+    footer.site h3 { color: #fff; font-size: 20px; margin: 0 0 10px; }
+    footer.site a { color: #fff; }
+    .foot-grid { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+    .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .foot-note { color: #90a6bd; font-size: 12.5px; margin-top: 22px; }
+
+    @media (max-width: 820px) {
+      .hero .wrap { grid-template-columns: 1fr; text-align: left; }
+      .avatar-wrap { order: -1; }
+      .metrics .wrap { grid-template-columns: repeat(2, 1fr); }
+      .two-col { grid-template-columns: 1fr; }
+      nav.links { display: none; position: absolute; top: 58px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 12px 22px; border-bottom: 1px solid var(--line); gap: 12px; }
+      nav.links.open { display: flex; }
+      .nav-toggle { display: block; }
+      .hero h1 { font-size: 33px; }
+    }
+    @media print {
+      header.nav, .cta-row, .nav-toggle { display: none !important; }
+      .hero { background: #fff !important; color: #000 !important; }
+      .hero h1, .hero .role, .hero p.lead, .profiles a { color: #000 !important; }
+      section.block { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">Shubhashis Saha<span>, MD</span></div>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+      <nav class="links" id="navlinks">
+        <a href="#about">About</a>
+        <a href="#training">Training</a>
+        <a href="#cardiology">Cardiology</a>
+        <a href="#research">Research</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="about">
+    <div class="wrap">
+      <div>
+        <h1>Shubhashis Saha, MD</h1>
+        <div class="role">Internal Medicine Resident · Cardiovascular Medicine &amp; Outcomes Research</div>
+        <p class="lead">
+          Internal medicine resident at Cook County Health (John H. Stroger Jr. Hospital) and MSc in Clinical
+          Investigation candidate at Northwestern University. My clinical and research work centers on cardiovascular
+          medicine — heart failure, structural and nuclear cardiology, and large-scale outcomes research — building
+          toward a career as an academic cardiologist.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="assets/Shubhashis-Saha-CV.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a>
+          <a class="btn btn-ghost" href="#research">View research</a>
+        </div>
+        <div class="profiles">
+          <a href="https://www.linkedin.com/in/shubhashissaha/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://orcid.org/0000-0002-9655-3237" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.4 17.9H5.9V7.6h1.5v10.3zM6.65 6.6a.9.9 0 110-1.8.9.9 0 010 1.8zm11.45 11.3h-1.5v-5.6c0-1.5-.6-2.5-2-2.5-1.1 0-1.75.75-2.05 1.5V17.9h-1.5V7.6h1.45v1.35h.02c.3-.55 1.05-1.5 2.65-1.5 1.9 0 2.93 1.25 2.93 3.65v6.8z"/></svg>
+            ORCID
+          </a>
+          <a href="https://www.ncbi.nlm.nih.gov/myncbi/shubhashis.saha.1/bibliography/public/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zM4 9h16v2H4zM4 14h10v2H4zM4 19h16v2H4z"/></svg>
+            PubMed
+          </a>
+          <a href="https://www.researchgate.net/profile/Shubhashis-Saha/research" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.6 14.4l-2-3.2h-1.3v3.2H9.6V7.6h3.1c1.9 0 3 .95 3 2.6 0 1.2-.6 2-1.7 2.4l2.2 3.4h-1.6z"/></svg>
+            ResearchGate
+          </a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <img class="avatar-img" src="assets/profile.jpg" alt="Portrait of Dr. Shubhashis Saha"
+             onerror="this.style.display='none'; document.getElementById('avfb').style.display='flex';" />
+        <div class="avatar-fallback" id="avfb">SS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <div class="metrics">
+    <div class="wrap">
+      <div class="metric"><div class="n">8</div><div class="l">Peer-reviewed journal articles</div></div>
+      <div class="metric"><div class="n">20+</div><div class="l">National &amp; international abstracts</div></div>
+      <div class="metric"><div class="n">13+</div><div class="l">First-author works</div></div>
+      <div class="metric"><div class="n">5</div><div class="l">Cardiology societies presented — AHA (×2) · ACC (×2) · SCAI · ASNC · HRS</div></div>
+    </div>
+  </div>
+
+  <!-- ===== TRAINING ===== -->
+  <section class="block" id="training">
+    <div class="wrap">
+      <h2>Education &amp; Training</h2>
+      <p class="sub">Current appointments and degrees</p>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">Internal Medicine Residency</span><br /><span class="entry-org">Cook County Health · John H. Stroger Jr. Hospital, Chicago, IL</span></div>
+          <span class="entry-date">2024 – 2027</span>
+        </div>
+        <div class="entry-body">High-volume urban safety-net program. Program Director: Anshu Singh, MD. Early and repeated dedicated cardiology training across CCU, cardiology floors, consults, and clinics.</div>
+      </div>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">MSc in Clinical Investigation (MSCI)</span><br /><span class="entry-org">Northwestern University, Chicago/Evanston, IL</span></div>
+          <span class="entry-date">2025 – 2027</span>
+        </div>
+        <div class="entry-body">Formal graduate training in clinical research methods — epidemiology, biostatistics (basic &amp; advanced), clinical trials, EHR methods, and research ethics — completed alongside residency, with a mentored cardiovascular research thesis.</div>
+      </div>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">M.B.B.S. (MD-equivalent)</span><br /><span class="entry-org">Christian Medical College, Vellore, India</span></div>
+          <span class="entry-date">2015 – 2021</span>
+        </div>
+        <div class="entry-body">Quaternary referral and teaching hospital. Followed by compulsory service including a year in the cardiothoracic surgery ICU.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARDIOLOGY EXPERIENCE ===== -->
+  <section class="block" id="cardiology">
+    <div class="wrap">
+      <h2>Cardiovascular Clinical Experience</h2>
+      <p class="sub">~6 months of dedicated cardiology exposure during internal medicine residency, and counting</p>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">Coronary Care Unit (CCU) &amp; Cardiology Floors</span><br /><span class="entry-org">Cook County Health, Chicago, IL</span></div>
+          <span class="entry-date">2025 – present</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li><b>CCU:</b> post-STEMI care, symptomatic bradycardia requiring temporary pacemaker placement, cardiogenic shock requiring mechanical circulatory support, and VT storm managed with multiple antiarrhythmics.</li>
+            <li><b>Cardiology floors:</b> high-volume acute decompensated heart failure, pulmonary embolism, and antiarrhythmic initiation.</li>
+            <li>Two additional dedicated cardiology months planned in the PGY-3 year.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">Inpatient Consults &amp; Outpatient Cardiology Clinics</span><br /><span class="entry-org">Cook County Health, Chicago, IL</span></div>
+          <span class="entry-date">2024 – present</span>
+        </div>
+        <div class="entry-body">Evaluation of syncope, heart failure, chest pain, arrhythmias, and cardiac device issues; ED STEMI activations and impending cardiogenic shock. Longitudinal outpatient experience in general cardiology, electrophysiology, and structural clinics.</div>
+      </div>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">Observership — Adult &amp; Pediatric Cardiology</span><br /><span class="entry-org">Christian Medical College, Vellore, India</span></div>
+          <span class="entry-date">April 2024</span>
+        </div>
+        <div class="entry-body">
+          Completed between residency match results and the start of residency.
+          <ul>
+            <li>Spent most mornings in the catheterization laboratory observing routine diagnostic catheterizations, aortic aneurysm repair, complex peripheral artery disease interventions, congenital heart disease repairs including VSD and ASD closure, electrophysiology studies, pacemaker placement, and atrial fibrillation ablation.</li>
+            <li>Participated in rounds through the afternoons and evenings, assisting with cardiology ICU and floor patient management.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="entry-head">
+          <div><span class="entry-title">Cardiothoracic Surgery ICU</span><br /><span class="entry-org">Christian Medical College, Vellore, India</span></div>
+          <span class="entry-date">2022 – 2023</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li><b>Capacity:</b> independently managed patients under the supervision of cardiac anesthesiologists and cardiac surgeons.</li>
+            <li><b>Case mix:</b> adults (95%) and children (5%); 95% post-operative and 5% pre-operative — including aortic dissection requiring blood-pressure stabilization and NSTEMI.</li>
+            <li><b>Bedside echocardiography:</b> obtaining standard windows, identifying pericardial effusion, visual estimation of ejection fraction, and recognizing wall-motion abnormalities.</li>
+            <li><b>ECG interpretation:</b> cardiac arrhythmias, conduction blocks, and signs of digoxin toxicity.</li>
+            <li><b>Academics:</b> attended the weekly academic half-days intended for cardiology fellows.</li>
+            <li>Earlier, served as first assistant on a CABG during a medical student elective at Uppsala University, Sweden.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH ===== -->
+  <section class="block" id="research">
+    <div class="wrap">
+      <h2>Research &amp; Scholarship</h2>
+      <p class="sub">
+        Cardiovascular outcomes research, meta-analyses, and case work.
+        <span class="badge badge-first">First author</span>
+        <span class="badge badge-star">Most meaningful</span>
+        <span class="badge badge-pub">Published</span>
+        <span class="badge badge-acc">Accepted</span>
+        <span class="badge badge-rev">Under review</span>
+      </p>
+
+      <h3 style="margin:6px 0 4px; font-size:19px;">Peer-reviewed journal articles</h3>
+      <div class="card">
+        <div class="pub"><span class="title">Hospital-level variations in outcomes and readmissions among patients with STEMI and cardiogenic shock receiving mechanical circulatory support: insights from a national cohort.</span> <span class="badge badge-acc">Accepted</span><br /><span class="authors">Murthi M, Quevedo A, Saha S, Memdani A, Baskaran N, Vij A.</span> <span class="venue">Catheterization and Cardiovascular Interventions.</span> 2026.</div>
+        <div class="pub"><span class="title">Performance of simple outpatient-based biomarker panels for screening of steatotic liver disease in women with morbid obesity from Southern India.</span> <span class="badge badge-first">First</span><span class="badge badge-pub">Published</span><br /><span class="authors">Saha S, Dass S, Cherian KE, et al.</span> <span class="venue">touchREVIEWS in Endocrinology.</span> 2025;21(1):48–54. PMID 40485655.</div>
+        <div class="pub"><span class="title">An unusual association of idiopathic SIADH with interstitial lung disease.</span> <span class="badge badge-first">First</span><span class="badge badge-pub">Published</span><br /><span class="authors">Saha S, Saha T, Sharma S, Mahmood N.</span> <span class="venue">Cureus.</span> 2023;15(11):e48304. PMID 37942124.</div>
+        <div class="pub"><span class="title">Screening practices for breast and cervical cancer and associated factors among rural women in Vellore, Tamil Nadu.</span> <span class="badge badge-first">First</span><span class="badge badge-pub">Published</span><br /><span class="authors">Saha S, Priya SM, Surender A, et al.</span> <span class="venue">Indian Journal of Cancer.</span> 2022;60(1):65–71. PMID 35017369.</div>
+        <div class="pub"><span class="title">Placenta percreta presenting as uterine rupture following previous B-Lynch suture.</span> <span class="badge badge-first">First</span><span class="badge badge-pub">Published</span><br /><span class="authors">Saha S, Abraham A, Raja Navaneethan P, Abraham K.</span> <span class="venue">BMJ Case Reports.</span> 2021;14(10):e245593. PMID 34598970.</div>
+        <div class="pub"><span class="title">Vascular consequences: posterior circulation infarction as a sequela of COVID-19 — a case report.</span> <span class="badge badge-pub">Published</span><br /><span class="authors">Philip AM, George LJ, Saha S, Sadanandan S.</span> <span class="venue">Cureus.</span> 2024;16(7):e65837. PMID 39219954.</div>
+        <div class="pub"><span class="title">Barriers and facilitators for the use of telehealth by healthcare providers in India — a systematic review.</span> <span class="badge badge-pub">Published</span><br /><span class="authors">Sharma P, Rao S, … Saha S, et al.</span> <span class="venue">PLOS Digital Health.</span> 2024;3(12):e0000398. PMID 39642108.</div>
+        <div class="pub"><span class="title">A retrospective study on the clinical profile of patients with firecracker-related injury presenting to the emergency department of a tertiary care center in South India.</span> <span class="badge badge-pub">Published</span><br /><span class="authors">Sethy A, Saha S, Hazra D, Abhilash KPP.</span> <span class="venue">Current Medical Issues.</span> 2020;18(1):1–6.</div>
+      </div>
+
+      <h3 style="margin:16px 0 4px; font-size:19px;">Book chapter (peer-reviewed)</h3>
+      <div class="card">
+        <div class="pub"><span class="title">Delayed Sleep-Wake Phase Disorder (DSWPD).</span> <span class="badge badge-first">First</span><br /><span class="authors">Saha S, Triantafillou T.</span> In: <span class="venue">The 5-Minute Clinical Consult 2027.</span> Wolters Kluwer; 2027:812–814.</div>
+      </div>
+
+      <h3 style="margin:16px 0 4px; font-size:19px;">Manuscripts under review — cardiovascular</h3>
+      <div class="card">
+        <div class="pub"><span class="title">Prognostic impact of PET-diagnosed coronary microvascular disease on major adverse cardiovascular events: a systematic review and meta-analysis.</span> <span class="badge badge-first">First</span><span class="badge badge-rev">Under review</span><br /><span class="authors">Saha S, Philip AM, George L, Malhotra S.</span> <span class="venue">Journal of Nuclear Cardiology.</span></div>
+        <div class="pub"><span class="title">Structural outcomes among patients receiving targeted therapy for ATTR cardiac amyloidosis — a systematic review and meta-analysis.</span> <span class="badge badge-star">Most meaningful</span><span class="badge badge-rev">Under review</span><br /><span class="authors">Varma R, Saha S, Nandyal S, et al. (Malhotra S).</span> <span class="venue">JACC: Heart Failure.</span></div>
+        <div class="pub"><span class="title">Biventricular Takotsubo syndrome following sunitinib initiation: a case report.</span> <span class="badge badge-first">First</span><span class="badge badge-star">Most meaningful</span><span class="badge badge-rev">Under review</span><br /><span class="authors">Saha S, Shrestha P, Sabanci R, Gomez J.</span> <span class="venue">JACC: Case Reports.</span></div>
+        <div class="pub"><span class="title">A 65-year-old man with severe thrombocytopenia during an ulcerative colitis flare.</span> <span class="badge badge-first">First</span><span class="badge badge-star">Most meaningful</span><span class="badge badge-rev">Under review</span><br /><span class="authors">Jha A, Saha S, et al. (Rohr L).</span> <span class="venue">NEJM Evidence.</span></div>
+        <div class="pub"><span class="title">Scorpion envenomation presenting to the adult emergency department in Southern India.</span> <span class="badge badge-first">First</span><span class="badge badge-rev">Under review</span><br /><span class="authors">Saha S, Singh B, Speedie A, Liz S, Abhilash KPP.</span> <span class="venue">Medical Journal of Dr. D.Y. Patil Vidyapeeth.</span></div>
+      </div>
+
+      <details class="group">
+        <summary>National &amp; international conference abstracts <span class="count-tag">— first author (7)</span></summary>
+        <div class="card">
+          <div class="pub"><span class="title">Beyond statins in acute coronary syndrome — an updated meta-analysis on PCSK9 inhibitors and their impact on lipid control, plaque burden, and clinical outcomes.</span> <span class="badge badge-first">First</span><br /><span class="venue">J Am Coll Cardiol (ACC 2026).</span> 2026;87(13 Suppl):A225.</div>
+          <div class="pub"><span class="title">Improvement in measures of quality of life among patients receiving targeted therapy for ATTR amyloidosis: a meta-analysis of RCTs.</span> <span class="badge badge-first">First</span><br /><span class="venue">J Am Coll Cardiol (ACC 2025).</span> 2025;85(12 Suppl):1727.</div>
+          <div class="pub"><span class="title">Lack of improvement in cardiac function among patients receiving targeted therapy for ATTR amyloidosis: a meta-analysis of RCTs.</span> <span class="badge badge-first">First</span><br /><span class="venue">J Am Coll Cardiol (ACC 2025).</span> 2025;85(12 Suppl):1726.</div>
+          <div class="pub"><span class="title">Transcatheter device closure of ventricular septal defect in children &lt; 30 lbs: a safe and effective procedure — 10-year single-center experience from Southern India.</span> <span class="badge badge-first">First</span><br /><span class="venue">Circulation (AHA 2024).</span> 2024;150(Suppl 1):A4146655.</div>
+          <div class="pub"><span class="title">GLP-1 receptor agonists and cardiovascular outcomes in MASLD: a systematic review and meta-analysis of observational studies.</span> <span class="badge badge-first">First</span><span class="badge badge-rev">Submitted</span><br /><span class="venue">Circulation (2026). (Golzar Y).</span></div>
+          <div class="pub"><span class="title">Gender disparities in heart failure readmissions and in-hospital mortality among patients with amyloidosis: insights from the National Readmission Database.</span> <span class="badge badge-first">First</span><br /><span class="venue">Poster — ACC Illinois Chapter Meeting, Chicago, 2025. (Malhotra S).</span></div>
+          <div class="pub"><span class="title">National trends, outcomes, and resource utilization in AMI-related hospitalizations among adults with type 1 diabetes — NIS study (2016–2023).</span> <span class="badge badge-first">First</span><span class="badge badge-star">Outstanding Abstract Award</span><br /><span class="venue">Oral and poster presentation, ENDO 2026 (Endocrine Society Annual Meeting).</span></div>
+        </div>
+      </details>
+
+      <details class="group">
+        <summary>National &amp; international conference abstracts <span class="count-tag">— co-author (15+)</span></summary>
+        <div class="card">
+          <div class="pub"><span class="title">10-year trend in outcomes of AMI hospitalization in patients with type 1 diabetes.</span><br /><span class="venue">J Endocr Soc (ENDO 2025).</span> 2025;9(Suppl 1):bvaf149.1035.</div>
+          <div class="pub"><span class="title">New permanent pacemaker implantation risk following TAVR vs SAVR: a meta-analysis of RCTs in low surgical-risk patients.</span><br /><span class="venue">J Soc Cardiovasc Angiogr Interv (SCAI 2025).</span> 2025;4(5 Suppl):103276.</div>
+          <div class="pub"><span class="title">Trends of AMI and ventricular arrhythmia–related mortality in the United States, 1999–2020.</span><br /><span class="venue">Circulation (AHA 2025).</span> 2025;152(Suppl 3):A4371766.</div>
+          <div class="pub"><span class="title">Diagnostic accuracy of late gadolinium enhancement vs invasive angiography for detecting CAD in new-onset heart failure: an updated systematic review and meta-analysis.</span> <span class="badge badge-pub">In press</span><br /><span class="venue">Journal of Cardiac Failure (2026).</span></div>
+          <div class="pub"><span class="title">Atrial arrhythmias and mortality in pulmonary hypertension: systematic review and meta-analysis.</span><br /><span class="venue">Heart Rhythm (HRS 2026).</span> 2026;23(4):S566.</div>
+          <div class="pub"><span class="title">Cocaine use, hypertensive emergency, and aortic dissection: a nationwide trend and outcome analysis, 2016–2021.</span><br /><span class="venue">Hypertension (AHA Hypertension 2025).</span> 2025;82(Suppl 1):FR612.</div>
+          <div class="pub"><span class="title">Cardiovascular events in hospitalized patients with malignant neuroendocrine tumors: a nationwide analysis.</span><br /><span class="venue">Circulation (AHA 2025).</span> 2025;152(Suppl 3):A4368574.</div>
+          <div class="pub"><span class="title">Contrasting baseline hemodynamic signatures in cardiogenic shock from AMI and acute heart failure: a meta-analysis.</span><br /><span class="venue">J Am Coll Cardiol (ACC 2025).</span> 2025;85(12 Suppl):2825.</div>
+          <div class="pub"><span class="title">Comparative outcomes of cardiogenic shock in AMI vs acute heart failure: a meta-analysis.</span><br /><span class="venue">Circulation (AHA 2024).</span> 2024;150(Suppl 1):A4143910.</div>
+          <div class="pub"><span class="title">Efficacy of bempedoic acid vs placebo for additional lipid lowering in patients on background statin therapy: a meta-analysis of RCTs.</span><br /><span class="venue">Circulation (AHA 2025).</span> 2025;152(Suppl 3):A4371829.</div>
+          <div class="pub"><span class="title">Comparative efficacy and safety of pulsed-field ablation vs conventional thermal ablation in atrial fibrillation: a meta-analysis of randomized trials.</span><br /><span class="venue">J Am Coll Cardiol (ACC 2026).</span> 2026;87(13 Suppl):A87.</div>
+          <div class="pub"><span class="title">Clinical efficacy of telemedicine vs standard outpatient management for heart failure: a systematic review and meta-analysis.</span><br /><span class="venue">Circulation (AHA 2025).</span> 2025;152(Suppl 3):A4367189.</div>
+          <div class="pub"><span class="title">Racial, gender, and comorbidity predictors of cardiovascular mortality in class III obesity: insights from the NIS.</span><br /><span class="venue">Circulation (AHA 2025).</span> 2025;152(Suppl 3):A4369704.</div>
+          <div class="pub"><span class="title">Elevated pericoronary fat attenuation on coronary CT angiography and MACE in T2D: a systematic review and meta-analysis.</span> <span class="badge badge-rev">Submitted</span><br /><span class="venue">Circulation (2026).</span></div>
+          <div class="pub"><span class="title">Sepsis in Takotsubo cardiomyopathy: association with ventricular arrhythmias, mechanical circulatory support, and mortality.</span> <span class="badge badge-rev">Submitted</span><br /><span class="venue">Circulation (2026).</span></div>
+          <div class="pub"><span class="title">Biventricular Takotsubo syndrome following sunitinib initiation: diagnostic and prognostic insights from cardiac MRI.</span> <span class="badge badge-rev">Submitted</span><br /><span class="venue">Circulation (2026).</span></div>
+        </div>
+      </details>
+
+      <h3 style="margin:18px 0 4px; font-size:19px;">Ongoing projects &amp; mentorship</h3>
+      <div class="two-col">
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">Predischarge TTE parameters as predictors of 30-day readmission in HFpEF</div>
+          <div class="entry-body">Retrospective cohort; IRB-approved, data collection ongoing. Serves as the mentored MSCI thesis.</div>
+          <div class="pi">PI: <b>Yasmeen Golzar, MD</b></div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">PET-diagnosed coronary microvascular disease &amp; MACE</div>
+          <div class="entry-body">Systematic review and meta-analysis; manuscript under review.</div>
+          <div class="pi">PI: <b>Saurabh Malhotra, MD</b></div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">Biventricular Takotsubo following sunitinib — case report</div>
+          <div class="entry-body">Manuscript complete; under review.</div>
+          <div class="pi">PI: <b>Javier Gomez Valencia, MD</b></div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">National trends in AMI hospitalizations among adults with type 1 diabetes</div>
+          <div class="entry-body">National Inpatient Sample study (2016–2023); manuscript in progress.</div>
+          <div class="pi">PI: <b>Hafeez Shaka, MD</b></div>
+        </div>
+      </div>
+
+      <h3 style="margin:18px 0 4px; font-size:19px;">Journal peer-review service</h3>
+      <div class="card">
+        <div class="entry-body">Multiple peer reviews for <b>Frontiers in Cardiovascular Medicine</b>, <b>Frontiers in Endocrinology</b>, <b>Frontiers in Oncology</b>, and <b>Cureus</b>.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREDENTIALS ===== -->
+  <section class="block" id="credentials">
+    <div class="wrap">
+      <h2>Credentials &amp; Recognition</h2>
+      <p class="sub">Licensure, examinations, memberships, and honors</p>
+
+      <div class="two-col">
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:16px;">Licensure &amp; certification</div>
+          <ul class="list-clean">
+            <li><span class="yr">Nov 2022</span>USMLE Step 1 — passed</li>
+            <li><span class="yr">Jun 2023</span>USMLE Step 2 CK — passed</li>
+            <li><span class="yr">Dec 2023</span>USMLE Step 3 — passed</li>
+            <li>BLS &amp; ACLS provider certification</li>
+            <li>Illinois medical license</li>
+            <li>Tamil Nadu Medical Council (India)</li>
+          </ul>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:16px;">Professional memberships</div>
+          <ul class="list-clean">
+            <li>American College of Cardiology (ACC)</li>
+            <li>American Heart Association (AHA)</li>
+            <li>American Society of Nuclear Cardiology (ASNC)</li>
+            <li>American College of Physicians (ACP)</li>
+            <li>National Lipid Society (NLS)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <div class="entry-title" style="font-size:16px;">Honors &amp; awards</div>
+        <ul class="list-clean">
+          <li><span class="yr">2026</span>Outstanding Abstract Award, ENDO 2026 (Endocrine Society Annual Meeting)</li>
+          <li><span class="yr">2026</span>Institutional Award for Outstanding Poster Presentation, Cook County Health</li>
+          <li><span class="yr">2019</span>Gwenda Lewis Prize for Anesthesia, CMC Vellore</li>
+          <li><span class="yr">2019</span>Institutional grant — international poster presentation, TUFH Conference, Darwin, Australia</li>
+          <li><span class="yr">2018</span>Full scholarship for medical student exchange, Uppsala University, Sweden (top 10 in class)</li>
+          <li><span class="yr">2015</span>Rank 1, West Bengal Joint Entrance Examination (WBJEE)</li>
+          <li><span class="yr">2014</span>KVPY scholarship — Dept. of Science &amp; Technology, Govt. of India</li>
+          <li><span class="yr">2013</span>NTSE scholarship — NCERT, Govt. of India</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE ===== -->
+  <section class="block" id="service">
+    <div class="wrap">
+      <h2>Teaching, Leadership &amp; Service</h2>
+      <p class="sub">Education, mentorship, and community engagement</p>
+
+      <div class="two-col">
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">Curriculum Committee &amp; Program Representative</div>
+          <div class="entry-date" style="margin:2px 0 6px;">Cook County Health · 2024 – present</div>
+          <div class="entry-body">Contributed to major internal medicine curriculum changes (MICU roster modernization, floor workflow redesign, resident-led didactics) and represented the program in recruitment.</div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">Research Mentorship</div>
+          <div class="entry-date" style="margin:2px 0 6px;">Since 2019</div>
+          <div class="entry-body">Mentored two groups of junior medical students through research projects from question to publication, and guided one student longitudinally through medical school.</div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">UDHAVI COVID-19 Telemedicine Helpline</div>
+          <div class="entry-date" style="margin:2px 0 6px;">CMC Vellore · 2021</div>
+          <div class="entry-body">Junior-most member of a physician-led helpline providing evidence-based telephone consultations to remote patients during pandemic lockdowns.</div>
+        </div>
+        <div class="card" style="margin:0;">
+          <div class="entry-title" style="font-size:15px;">‘Cognitio’ Research Symposium &amp; Rural Camps</div>
+          <div class="entry-date" style="margin:2px 0 6px;">CMC Vellore · 2015 – 2018</div>
+          <div class="entry-body">Treasurer (2017) and Organizer-in-charge (2018) of an undergraduate research symposium; volunteer clinician at rural medical camps in Karnataka and Assam.</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <div class="entry-title" style="font-size:15px;">Languages &amp; interests</div>
+        <div class="entry-body">Fluent in English, Bengali, Hindi, and Tamil. Lifelong swimmer; chess; Indian classical vocals and harmonium. Research tools: R, SPSS, STATA, RevMan, Rayyan/DistillerSR, LaTeX.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER / CONTACT ===== -->
+  <footer class="site" id="contact">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <h3>Contact</h3>
+          <p style="margin:0 0 5px;">
+            <span style="color:#90a6bd; font-size:12.5px; display:block;">Institutional</span>
+            <a id="email-inst" href="#">email me</a>
+            <noscript> shubhashis.saha [at] cookcountyhealth [dot] org</noscript>
+          </p>
+          <p style="margin:0 0 8px;">
+            <span style="color:#90a6bd; font-size:12.5px; display:block;">Personal</span>
+            <a id="email-link" href="#">email me</a>
+            <noscript> drshubhashissaha [at] gmail [dot] com</noscript>
+          </p>
+          <p style="margin:0; color:#90a6bd; font-size:13px;">Chicago, IL</p>
+        </div>
+        <div>
+          <h3>Profiles</h3>
+          <div class="foot-links">
+            <a href="https://www.linkedin.com/in/shubhashissaha/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://orcid.org/0000-0002-9655-3237" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://www.ncbi.nlm.nih.gov/myncbi/shubhashis.saha.1/bibliography/public/" target="_blank" rel="noopener noreferrer">PubMed</a>
+            <a href="https://www.researchgate.net/profile/Shubhashis-Saha/research" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-note">© <span id="yr"></span> Shubhashis Saha, MD</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    // Lightweight email obfuscation (deters naive scrapers)
+    (function () {
+      [['email-inst', 'shubhashis.saha', 'cookcountyhealth.org'],
+       ['email-link', 'drshubhashissaha', 'gmail.com']].forEach(function (e) {
+        var a = document.getElementById(e[0]);
+        if (!a) return;
+        a.href = 'mailto:' + e[1] + '@' + e[2];
+        a.textContent = e[1] + '@' + e[2];
+      });
+    })();
+    // Close mobile menu on link click
+    document.querySelectorAll('#navlinks a').forEach(function (el) {
+      el.addEventListener('click', function () { document.getElementById('navlinks').classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
